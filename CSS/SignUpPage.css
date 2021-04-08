@@ -1,0 +1,213 @@
+body {
+    margin:0;
+    font-family:Bahnschrift;
+    overflow-x:hidden;
+}
+p{
+    margin:0;
+}
+.grid-container{
+    display:grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 85% 15%;
+    grid-template-areas:
+        "design-element signup-area"
+        "design-element footer";
+
+}
+main.signup-area {
+    grid-area: signup-area;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+footer{
+    grid-area:footer;
+    padding: 25px;
+    font-size: .7cm;
+    text-align: center;
+    color: #dbdbdb;
+}
+section.design-element {
+    grid-area: design-element;
+    background: url('../resources/left-art.svg') no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.signup-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+        "logo logo"
+        "text-signup text-signup"
+        "signup-area signup-area"
+        "signup-button signup-button"
+        "continue continue";
+}
+.logo{
+    grid-area:logo;
+    margin-top:5%;
+    margin-left:40%;
+    width:20%;
+}
+.signup-text{
+    grid-area:text-signup;
+    margin-top:1%;
+    font-weight: 500;
+    font-size: 1.2cm;
+    color: #65bbb4;
+    text-align:center;
+}
+.input-area{
+    grid-area:signup-area;
+    padding-top:5%;
+    margin-left:10%;
+    margin-right:10%;
+}
+input.input-first-boxes {
+    border: 0;
+    outline: 0;
+    padding-top: 50px;
+    border-bottom: solid 1.5px #ebebeb;
+    width: 45%;
+    font-size: 1rem;
+}
+input.input-second-boxes {
+    border: 0;
+    outline: 0;
+    padding-top: 50px;
+    border-bottom: solid 1.5px #ebebeb;
+    width: 45%;
+    font-size: 1rem;
+}
+a#continue {
+    grid-area:continue;
+    padding-top:8%;
+    color: #ac6476;
+    font-size: .5cm;
+    margin-left:10%;
+}
+.button-area{
+    grid-area: signup-button;
+    text-align:right ;
+    padding-top: 5%;
+    margin-right:16%;
+}
+.signup-button {
+    width: 200px;
+    height:30px;
+    background-color: #8cc9c6;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: .5cm;
+    cursor: pointer;
+    border-radius: 50px;
+    outline: 0;
+}
+.onTop-buttons-box{
+    position: absolute;
+    padding-top:10%;
+    padding-left: 30%;
+    font-weight: 500;
+}
+.signup-onTop{
+    background-color: white;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color: black;
+    font-size: .4cm;
+    width: 144px;
+    height: 50px;
+    border-radius: 30px 0px 0px 30px;
+    text-align: left;
+    padding-left:20px;
+}
+.login-onTop{
+    background-color:transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color: white;
+    font-size: .4cm;
+    text-align: left;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    padding-left:20px;
+    padding-top:25px;
+}
+
+@media screen and (max-width:860px) {
+    a#continue{
+        font-size:.4cm;
+    }
+    footer{
+        font-size:.5cm;
+    }
+    .signup-button{
+        width: 150px;
+        height:25px;
+        font-size: .4cm;
+    }
+    .signup-onTop{
+        font-size: .3cm;
+        width: 100px;
+        height: 30px;
+        border-radius: 30px 0px 0px 30px;
+    }
+    .signup-onTop{
+        font-size: .3cm;
+        width: 100px;
+        height: 30px;
+        padding-top:15px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .signup-onTop{
+        padding-left: 10px;
+    }
+    .signup-onTop{
+        padding-left:10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .grid-container{
+        height: 100vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% auto 10%;
+        grid-template-areas: 
+        "design-element"
+        "signup-area"
+        "footer";
+    }
+    section.design-element {
+        background: url('../resources/top-art.svg') no-repeat;
+    }
+    a#continue{
+        padding-bottom: 10px;
+    }
+    footer{
+        padding:15px;
+    }
+    .signup-onTop{
+        border-radius: 30px;
+        text-align: center;
+    }
+    .signup-onTop{
+        display: inline-flex;
+    }
+}
+@media screen and (max-width:370px) {
+    .signup-button{
+        width: 100px;
+    }
+}
