@@ -28,6 +28,7 @@ header{
 
 .nav_links{
     list-style: none;
+    display:none;
 }
 
 .nav_links li{
@@ -116,7 +117,7 @@ input.input-boxes {
     border-radius: 22px;
     background: #F0F0F0;
     padding: 20px; 
-    width: 600px;
+    width: 550px;
     height: 10px;  
     margin-top: 2%;
     outline: 0;
@@ -127,7 +128,7 @@ input.input-boxes {
     border-radius: 22px;
     background: #F0F0F0;
     padding: 20px; 
-    width: 600px;
+    width: 550px;
     height: 30px;  
     margin-top: 2%;
     outline: 0;
@@ -161,4 +162,110 @@ footer{
     font-size: .7cm;
     text-align: center;
     color: #dbdbdb;
+}
+
+@media screen and (max-width:1326px){
+    input.input-boxes {
+        width:480px;
+    }
+    .message-box{
+        width:480px;
+    }
+    .submit-button{
+        width:170px;
+        height:30px;
+        font-size: .4cm;
+    }
+}
+
+@media screen and (max-width:1166px){
+    input.input-boxes {
+        width:400px;
+    }
+    .message-box{
+        width:400px;
+    }
+    .submit-button{
+        width:150px;
+    }
+}
+
+@media screen and (max-width:999px){
+    input.input-boxes {
+        width:340px;
+    }
+    .message-box{
+        width:340px;
+    }
+    .submit-button{
+        width:120px;
+    }
+}
+
+@media screen and (max-width:852px){
+    input.input-boxes {
+        width:230px;
+    }
+    .message-box{
+        width:230px;
+    }
+    .submit-button{
+        width:100px;
+    }
+}
+
+@media screen and (max-width:634px){
+    footer{
+        font-size: .4cm;
+    }
+    header{
+        display: block;
+    }
+    a, nav{
+        display: none;
+    }
+    .grid-container{
+        height: 100vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% auto 10%;
+        grid-template-areas:
+        "design-element"
+        "contact-area"
+        "footer";
+    padding-top: 2px;
+    }
+    section.design-element {
+        background: url('../resources/contact-art-mob.svg') no-repeat;
+    }
+    input.input-boxes {
+        width:320px;
+    }
+    .message-box{
+        width:320px;
+    }
+}
+
+@media screen and (max-width:468px){
+    .contactus-text{
+        font-size: .8cm;
+    }
+    input.input-boxes {
+        width:240px;
+    }
+    .message-box{
+        width:240px; 
+    } 
+    .submit-button{
+        width:80px;
+        font-size: .3cm;
+    }
+}
+
+@media screen and (max-width:407px){
+    input.input-boxes {
+        width:170px;
+    }
+    .message-box{
+        width:170px;
+    }
 }

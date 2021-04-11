@@ -1,0 +1,186 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    font-family:Bahnschrift;
+    overflow-x:hidden;
+}
+
+/* Desktop MENU */
+li, a, button{
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 5px 3%;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #3d8f7e;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(101, 187, 180, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    outline: 0;
+    color: white;
+}
+
+button:hover{
+    background-color: rgba(101, 187, 180, 0.8);
+}
+
+nav{
+    display: contents;
+}
+
+.homeBtn{
+    padding-left: 100px;
+    padding-right: 200px;
+}
+
+/*--------------------------*/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: 
+    "controllers"
+    "canvas"
+    ;
+    margin: 10px;
+    padding-top: 50px;
+}
+
+.grid-controllers{
+    grid-area: controllers;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "card-name save generate-link send download-pdf print upload"
+    ;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.card-name-area{
+    grid-area: card-name;
+}
+
+.card-name-area input{
+    outline:0;
+    border: 0;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.save-area{
+    grid-area: save;
+}
+
+.generate-link-area{
+    grid-area: generate-link;
+}
+
+.send-area{
+    grid-area: send;
+}
+
+.download-pdf-area{
+    grid-area: download-pdf;
+}
+
+.print-area{
+    grid-area: print;
+}
+
+.upload-area{
+    grid-area: upload;
+}
+
+p#filesExt{
+    margin: 0;
+    font-weight: 100;
+    font-size: 10px;
+}
+
+.icon{
+    width: 20px;
+    position: absolute;
+}
+
+strong{
+    padding-left: 30px;
+    vertical-align: text-top;
+}
+
+canvas{
+    grid-area: canvas;
+    background-color: whitesmoke;
+    height: 100%;
+    width: 100%;
+}
+
+.menu-icon{
+    display: none;
+}
+
+@media screen and (max-width: 1220px) {
+    .homeBtn{
+        padding-right: 10%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header{
+        display: block;
+    }
+    a, nav{
+        display: none;
+    }
+
+    .menu-icon{
+        padding-top: 10px;
+        float: right;
+        display: block;
+    }
+    .grid-controllers{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "card-name card-name card-name" 
+        "save generate-link send"
+        "download-pdf print upload"
+        ;
+    }    
+}
