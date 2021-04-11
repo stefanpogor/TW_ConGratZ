@@ -1,0 +1,180 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    font-family:Bahnschrift;
+    overflow-x:hidden;
+    background: url(../resources/homePage-banner.svg) top right no-repeat;
+    background-attachment: fixed;
+}
+
+/* Desktop MENU */
+li, a, button{
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 5px 3%;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #3d8f7e;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(101, 187, 180, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    outline: 0;
+    color: white;
+}
+
+button:hover{
+    background-color: rgba(101, 187, 180, 0.8);
+}
+
+nav{
+    display: contents;
+}
+
+.homeBtn{
+    padding-left: 100px;
+    padding-right: 200px;
+}
+
+/*--------------------------*/
+
+.menu-icon{
+    display: none;
+}
+
+.grid-container{
+    display: grid;
+    padding-top: 150px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto 1fr 1fr;
+    grid-template-areas: 
+    "h1-title "
+    "desc "
+    "createCards "
+    "premadeCards "
+    ;
+    padding-left: 10px;
+}
+
+h1, h2{
+    margin: 0;
+}
+
+.h1-title{
+    grid-area: h1-title;
+    font-size: 150%;
+    color:#3f446b;
+}
+
+.p-desc{
+    grid-area: desc;
+    font-size: 20px;
+    color: #6ec6b8;
+    word-wrap: break-word;
+}
+
+.createBtn{
+    grid-area: createCards;
+}
+
+.seeBtn{
+    grid-area: premadeCards;
+    padding-top: 5px;
+}
+
+button#colorCreateB{
+    background-color: #bf9eb3;
+}
+
+button#colorSeeB{
+    background-color: #3f446b;
+}
+
+#homeSection{
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    height: 100vh;
+}
+
+#createCardsSection{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10%;
+}
+
+.container{
+    width: 300px;
+    border-radius: 30px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container a{
+    font-size: 30px;
+    padding: 20px;
+}
+
+.container:nth-child(1){
+    background-color: #bf9eb3;
+}
+
+.container:nth-child(2){
+    background-color: #d47f77;
+}
+
+.container:nth-child(3){
+    background-color: #3f446b;
+}
+
+@media screen and (max-width: 1220px) {
+    .homeBtn{
+        padding-right: 10%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header{
+        display: block;
+    }
+    a, nav{
+        display: none;
+    }
+
+    .menu-icon{
+        padding-top: 10px;
+        float: right;
+        display: block;
+    }   
+}
