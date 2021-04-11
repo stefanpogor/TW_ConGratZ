@@ -205,7 +205,7 @@ footer{
     header{
         display: block;
     }
-    a, nav{
+    .homeBtn, nav{
         display: none;
     }
     .menu-icon{
