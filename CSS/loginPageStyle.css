@@ -188,7 +188,7 @@ a#continue {
         "login-area"
         "footer";
     }
-    section.design-element {
+    div.design-element {
         background: url('../resources/top-art.svg') no-repeat;
     }
     a#continue{

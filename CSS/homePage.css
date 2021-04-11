@@ -214,3 +214,25 @@ figure{
         display: block;
     }   
 }
+
+@media screen and (max-width:800px) {
+    
+    .grid-container{
+        width: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto auto auto;
+        grid-template-areas: 
+        "h1-title"
+        "desc"
+        "createCards"
+        "premadeCards"
+        ;
+        text-align: center;
+    }
+    h1{
+        word-wrap: break-word;
+    }
+    .p-desc{
+        color: black;
+    }
+}
