@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/loginPageStyle.css"/>
     <title>Login - ConGratZ</title>
@@ -14,11 +16,11 @@
                 <button class="signup-onTop">SIGN UP</button>
             </form>
         </div>
-        <section class="design-element"></section>
+        <div class="design-element"></div>
         <main class="login-area">
             <div class="login-grid">
                 <div class="logo">
-                    <img src="../resources/ConGratZ logo.svg" alt="ConGratZ logo" />
+                    <img src="../resources/ConGratZ-logo.svg" alt="ConGratZ logo" />
                 </div>
                 <div class="login-text">
                     <p>LOGIN</p>
@@ -27,14 +29,14 @@
                     <input class="input-boxes" type="email" placeholder="Email">
                     <input class="input-boxes" type="password" placeholder="Password">
                 </div>
-                <a id="forgot-password">
+                <a id="forgot-password" href="#">
                     Forgot your password?
                 </a>
-                <a id="continue">
+                <a id="continue" href="homePage.html">
                     Continue without logging...
                 </a>
                 <div class="button-area">
-                    <button class="login-button">LOGIN</button>
+                    <button onclick="location.href='homePage.html'" class="login-button">LOGIN</button>
                 </div>
             </div>
         </main>
