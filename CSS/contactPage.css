@@ -28,7 +28,6 @@ header{
 
 .nav_links{
     list-style: none;
-    display:none;
 }
 
 .nav_links li{
@@ -163,6 +162,9 @@ footer{
     text-align: center;
     color: #dbdbdb;
 }
+.menu-icon{
+    display: none;
+}
 
 @media screen and (max-width:1326px){
     input.input-boxes {
@@ -200,6 +202,17 @@ footer{
     .submit-button{
         width:120px;
     }
+    header{
+        display: block;
+    }
+    a, nav{
+        display: none;
+    }
+    .menu-icon{
+        padding-top: 10px;
+        float: right;
+        display: block;
+    }
 }
 
 @media screen and (max-width:852px){
@@ -217,12 +230,6 @@ footer{
 @media screen and (max-width:634px){
     footer{
         font-size: .4cm;
-    }
-    header{
-        display: block;
-    }
-    a, nav{
-        display: none;
     }
     .grid-container{
         height: 100vh;
