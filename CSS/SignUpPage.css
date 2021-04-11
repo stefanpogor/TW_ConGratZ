@@ -27,7 +27,7 @@ footer{
     text-align: center;
     color: #dbdbdb;
 }
-section.design-element {
+div.design-element {
     grid-area: design-element;
     background: url('../resources/left-art.svg') no-repeat;
     background-size: cover;
@@ -189,7 +189,7 @@ a#continue {
         "signup-area"
         "footer";
     }
-    section.design-element {
+    div.design-element {
         background: url('../resources/top-art.svg') no-repeat;
     }
     a#continue{

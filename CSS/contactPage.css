@@ -81,7 +81,7 @@ main.contact-area {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-section.design-element {
+div.design-element {
     grid-area: design-element;
     background: url('../resources/contact-art.svg') no-repeat;
     background-size: cover;
@@ -241,7 +241,7 @@ footer{
         "footer";
     padding-top: 2px;
     }
-    section.design-element {
+    div.design-element {
         background: url('../resources/contact-art-mob.svg') no-repeat;
     }
     input.input-boxes {
