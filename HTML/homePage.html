@@ -9,10 +9,10 @@
     <title>Home</title>
 </head>
 <body>
-    <section id="homeSection">
+    <div id="homeSection">
     <header>
         <img class="logo" src="../resources/ConGratZ logo.svg" alt="logo">
-        <a class="homeBtn" href="homePage.html"><button>HOME</button></a>
+        <div class="homeBtn"><button onclick="location.href='homePage.html'">HOME</button></div>
         <nav>
             <ul class="nav_links">
                 <li><a href="createGreetingsCardPage.html">CREATE GREETINGS CARD</a></li>
@@ -25,7 +25,7 @@
             <i class="fa fa-bars"></i>
         </a>
     </header>
-    <section class="grid-container">
+    <div class="grid-container">
         <div class="h1-title">
             <h1>ConGratZ - Welcome to our website!</h1>
         </div>
@@ -34,26 +34,52 @@
             or choose from our premade ones.
             Also you can edit them!</p>
         </div>
-        <a class="createBtn" href="#createCardsSection">
-            <button id="colorCreateB">START CREATING YOUR OWN CARDS!</button>
-        </a>
-        <a class="seeBtn" href="#premadeCards">
-            <button id="colorSeeB">SEE OUR PREMADE CARDS!</button>
-        </a>
-    </section>
-    </section>
-    <section id="createCardsSection"> 
-        <div class="container">
-
-        </div>
+        <div class="createBtn"><button id="colorCreateB" onclick="location.href='#createCardsSection'" >START CREATING YOUR OWN CARDS!</button></div>
+        <div class="seeBtn"><button id="colorSeeB" onclick="location.href='#premadeCards'">SEE OUR PREMADE CARDS!</button></div>
+    </div>
+    </div>
+    <h2>Create your OWN stuff, TODAY!</h2>
+    <div id="createCardsSection"> 
         <div class="container">
             <a>
                 START CREATING MY OWN GREETINGS CARD
             </a>
         </div>
         <div class="container">
-
+            <a>
+                START CREATING MY OWN BUSINESS CARD
+            </a>
         </div>
-    </section>
+    </div>
+    <br>
+    <div id="premadeCards">
+        <h2>Greetings Cards</h2>
+        
+        <div class="GreetingsCard">    
+        <div class="greetingsCard-container">
+            <figure>
+            <img src="../Cards/greetings-card1.jfif" alt="card1">
+            <figcaption>Card1</figcaption>
+        </figure>
+        </div>
+        <div class="greetingsCard-container">
+            <figure>
+            <img src="../Cards/greetings-card2.jfif" alt="card2">
+            <figcaption>Card2</figcaption>
+        </figure>
+        </div>
+        </div>
+
+        <h2>Business Cards</h2>
+
+        <div class="BusinessCard">
+        <div class="businessCard-container">
+            <figure>
+            <img src="../Cards/business-card.png" alt="card3">
+            <figcaption>Card3</figcaption>
+        </figure>
+        </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -37,7 +37,7 @@ header{
     padding: 0px 20px;
 }
 
-.nav_links li a {
+.nav_links li a, button{
     transition: all 0.3s ease 0s;
 }
 
@@ -79,7 +79,7 @@ nav{
     display: grid;
     padding-top: 150px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr auto 1fr 1fr;
+    grid-template-rows: 1fr auto auto auto;
     grid-template-areas: 
     "h1-title "
     "desc "
@@ -132,13 +132,21 @@ button#colorSeeB{
     text-align: center;
     display: flex;
     justify-content: space-between;
-    padding: 10%;
+    padding: 14%;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+#premadeCards{
+    padding-left: 10px;
+    justify-content: space-between;
 }
 
 .container{
     width: 300px;
     border-radius: 30px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
 }
 
 .container a{
@@ -158,6 +166,34 @@ button#colorSeeB{
     background-color: #3f446b;
 }
 
+h2{
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    color: #3f446b;
+}
+
+.GreetingsCard{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.greetingsCard-container img{
+    height: 250px;
+    margin: 10px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.BusinessCard{
+    display: inline-flex;
+}
+.businessCard-container img{
+    width: 200px;
+    margin: 10px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+figure{
+    text-align: center;
+}
+
 @media screen and (max-width: 1220px) {
     .homeBtn{
         padding-right: 10%;
@@ -168,7 +204,7 @@ button#colorSeeB{
     header{
         display: block;
     }
-    a, nav{
+    .homeBtn, nav{
         display: none;
     }
 
