@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <link rel="stylesheet" href="../CSS/scholarlyStyle.css">
+        <title>Scholarly HTML</title>
+    </head>
+    <body prefix="schema: http://schema.org" itemscope="" itemtype="http://schema.org/WebPage">
+        <h1>ConGratZ - Scholarly </h1>
+        <section typeof="sa:AuthorsList">
+            <h2>Autori</h2>
+            <ul>
+                <li typeof="sa:ContributorRole" property="schema:author">
+                <a typeof="schema:Person" href="https://github.com/stefanpogor">
+                <meta property="schema:givenName" content="Ștefan" />
+                <meta property="schema:familyName" content="Pogor" />
+                <span property="schema:name">Ștefan Pogor</span>
+                </a>
+                <ul>
+                    <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                        <p>E-mail: pogorstefan@gmail.com</p>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            <ul>
+                <li typeof="sa:ContributorRole" property="schema:author">
+                <a typeof="schema:Person" href="https://github.com/evelynatincu">
+                <meta property="schema:givenName" content="Evelyna" />
+                <meta property="schema:familyName" content="Tincu" />
+                <span property="schema:name">Evelyna Tincu</span>
+                </a>
+                <ul>
+                    <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                        <p>E-mail: tincu_evelyna@yahoo.com</p>
+                    </li>
+                </ul>
+                </li>
+            <ul>
+        </section>
+
+        <h2>Cuprins</h2>
+        <li><a href="#introducere">Introducere</a> </li>
+            <ul>
+              <li><a href="#scop">1.1 Scop</a></li>
+              <li><a href="#audientaq">1.2 Audienta tinta</a></li>
+              <li><a href="#scop-site">1.3 Scopul sitului</a> </li>
+              <li><a href="#referinte">1.4 Referinte</a></li>
+            </ul>
+
+        <li><a href="#descriere">Descriere</a> </li>
+                <ul>
+                <li><a href="#perspectiva">1.1 Perspectiva produsului</a></li>
+                <li><a href="#functionalitati-produs">1.2 Functionalitatile produsului</a></li>
+                <li><a href="#categorii">1.3 Categorii de utilizatori</a></li>
+                <li><a href="#mediu">1.4 Mediu de operare</a></li>
+                <li><a href="#design">1.5 Design si constrangeri de implementare</a></li>
+                </ul>
+        <li><a href="#cerinte">Cerinte externe</a> </li>
+                <ul>
+                <li><a href="#interfata-utilizator">1.1 Interfata utilizator</a></li>
+                <li><a href="#interfata-soft">1.2 Interfata software</a></li>
+                <li><a href="#interfata-comunicare">1.3 Interfata de comunicare</a></li>
+                </ul>
+
+        <li><a href="#functionalitati">Functionalitati</a> </li>
+                <ul>
+                <li><a href="#autentif-inreg">1.1 Autentificare/Inregistrare</a></li>
+                <li><a href="#creare">1.2 Crearea de felicitari/carti de vizita</a></li>
+                <li><a href="#save">1.3 Save</a></li>
+                <li><a href="#generate">1.4 Generate link</a></li>
+                <li><a href="#send">1.5 Send</a></li>
+                <li><a href="#download">1.6 Download PDF</a></li>
+                <li><a href="#print">1.7 Print</a></li>
+                <li><a href="#upload">1.8 Upload</a></li>
+                <li><a href="#contact">1.9 Contact</a></li>
+                </ul>
+                <li><a href="#cerinte">Cerinte non-functionale</a> </li>
+                <li><a href="#bibliografie">Bibliografie</a> </li>
+                
+    <article id = "article" typeof = "schema:ScholarlyArticle" resource = "#"> 
+        <section typeof="sa:ScholarlyArticle" role="doc-introduction">
+            <h2 id="introducere">Introducere</h2>
+            <h3>1.1 Scop</h3>
+            <p>
+                Site-ul ConGratZ este destinat persoanelor ce vor sa isi creeze propriile felicitari pentru zile aniversare si ocazii speciale, dar si carti de vizita pentru 
+                business, intr-un mod cat mai usor si intuitiv. Este usor de utilizat: accesezi situl, dupa fie iti creezi propria felicitare/carte de vizita, fie iti alegi una deja existenta.
+            </p>
+            <h3>1.2 Audienta tinta</h3>
+            <p>
+                Acest document este destinat tuturor persoanelor ce doresc sa afle mai multe informatii despre site, cum ar fi: cum se foloseste zona de editare a cartilor de vizita/felicitarilor.
+            </p>
+            <h3>1.3 Scopul sitului</h3>
+            <p>
+                Site-ul are scopul de a ajuta userii care au nevoie de felicitari sau/si carti de vizita personalizate intr-un mod cat mai placut si usor.
+            </p>
+            <h3>1.4 Referinte</h3>
+            <p>Pentru a putea realiza o interfata a site-ului cat mai atractiva si usor de folosit, am analizat cateva situri: </p>
+	            <p>https://www.w3schools.com/css/ </p>
+                <p>https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css </p>
+                <p>https://www.greetingsisland.com/ </p>
+        </section>
+
+        <section  typeof="sa:MaterialsAndMethods" role="doc-chapter" >
+            <h2 id="descriere">Descriere</h2>
+            <h3>1.1 Perspectiva produsului</h3>
+            <p>
+                Produsul isi propune realizarea de carti de vizita si felicitari personalizate pentru utilizatori.
+            </p>
+            <h3>1.2 Functionalitatile produsului</h3>
+            <p>
+                Cu ajutorul sitului, utilizatorii vor putea, cu sau fara cont, sa isi creeze propriile carti de vizita/felicitari. 
+	        Pentru felicitari utilizatorul va putea, intr-un editor, sa puna diferite imagini, sa adauge text, sa aleaga dintre diferite culori etc. Dupa terminarea design-ului dorit, utilizatorul va putea trimite altor utilizatori prin e-mail, link direct, 
+            va putea descarca sub forma de pdf, va putea printa felicitarea, va putea salva in baza de date (in cazul in care are cont).
+	        Pentru cartile de vizita, pe langa cele mentionate mai sus, va putea incarca un fisier .XML pentru completarea automata a datelor.
+            </p>
+            <h3>1.3 Categorii de utilizatori</h3>
+            <p>
+                Situl va putea fi folosit de orice persoana obisnuita cu cunostinte minime de navigare pe un site, fiind intuitiv si usor de utilizat.
+            </p>
+            <h3>1.4 Mediu de operare</h3>
+            <p>
+                ConGratZ este o aplicatie WEB ce foloseste HTML si CSS, deci poate fi rulata in orice browser. 
+            </p>
+            <h3>1.5 Design si constrangeri de implementare</h3>
+            <p>
+                Fiind o aplicatie online ce creeaza felicitari si carti de vizita, trebuie sa ne limitam la o dimensiune specifica acestora. Astfel, vor putea fi adaugate imagini/text/elemente de design grafic intr-o arie bine definita.
+            </p>
+        </section>
+
+
+
+        
+    </body>
+</html>
