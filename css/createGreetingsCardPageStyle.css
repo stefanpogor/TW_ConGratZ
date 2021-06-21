@@ -1,0 +1,282 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    font-family:Bahnschrift;
+    overflow-x:hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Desktop MENU */
+li, a, button{
+    font-size: 13px;
+    color: #3f446b;
+    text-decoration: none;
+}
+
+header{
+    align-items: center;
+    padding: 5px 3%;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.logo{
+    width: 110px;
+    cursor: pointer;
+    float: left;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a, button{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #3d8f7e;
+}
+
+.homepagebtn{
+    padding: 9px 25px;
+    background-color: rgba(101, 187, 180, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    outline: 0;
+    color: white;
+}
+
+.signoutbtn{
+    font-size: 13px;
+    color: #3f446b;
+    background: none;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+}
+
+.homepagebtn:hover{
+    background-color: rgba(101, 187, 180, 0.8);
+}
+
+nav{
+    float: right;
+}
+/*--------------------------*/
+
+
+.loadBtnCovers {
+    background-color:rgba(101, 187, 180, 0.8);
+    color: white;
+    padding: 10px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .loadBtnCovers:hover, .loadBtnCovers:focus {
+    background-color: #2980B9;
+  }
+.thumb{
+    width:50%;
+    padding: 10px;
+}
+.dropdownCovers{
+    position: relative;
+    display: inline-block;
+}
+.loadingAreaCovers{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.showCoversContent {
+    display:block;
+}
+.loadingAreaCovers img:hover {
+    background-color: rgb(104, 192, 70);
+}
+
+
+.loadBtnStickers {
+    background-color:rgba(101, 187, 180, 0.8);
+    color: white;
+    padding: 10px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .loadBtnStickers:hover, .loadBtnStickers:focus {
+    background-color: #2980B9;
+  }
+.dropdownStickers{
+    position: relative;
+    display: inline-block;
+}
+.loadingAreaStickers{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.showStickersContent {
+    display:block;
+}
+.loadingAreaStickers img:hover {
+    background-color: rgb(104, 192, 70);
+}
+
+
+.loadBtnGifs {
+    background-color:rgba(101, 187, 180, 0.8);
+    color: white;
+    padding: 10px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .loadBtnGifs:hover, .loadBtnGifs:focus {
+    background-color: #2980B9;
+  }
+.dropdownGifs{
+    position: relative;
+    display: inline-block;
+}
+.loadingAreaGifs{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.showGifsContent {
+    display:block;
+}
+.loadingAreaGifs img:hover {
+    background-color: rgb(104, 192, 70);
+}
+
+
+#canvasGreet{
+    grid-area: canvas;
+    width: 450px;
+    height: 500px;
+    background: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin: auto;
+}
+
+.create-area{
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "bgimage canvas"
+    "form canvas"
+    "buttons canvas";
+}
+.bgimage{
+    grid-area:bgimage;
+}
+.controlBtns{
+    grid-area:buttons;
+}
+
+.details{
+    grid-area: form;
+}
+
+label{
+    font-size: 13px;
+    align-items: center;
+}
+
+.controlBtn{
+    background-color:rgba(101, 187, 180, 0.8);
+    color: white;
+    padding: 10px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.input-color {
+    border: none;
+  }
+.qr-container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+#qr_code{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu-icon{
+    display: none;
+}
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #6ec6b8;
+    color: white;
+    margin-top: auto;
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.2);
+  }
+
+
+@media screen and (max-width: 414px) {
+    ul{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        float: right;
+        margin-top: 20px;
+    }
+    .create-area{
+        padding-left: 5px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: whitesmoke;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "bgimage"
+        "form"
+        "buttons"
+        "canvas";
+    }
+    #canvasGreet{
+        width: 300px;
+        height: 350px;
+        margin-top: 10px;
+    }
+}
