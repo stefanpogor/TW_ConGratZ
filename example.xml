@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employeesList>
+    <employeeDetails>
+        <name>Popescu Ionel</name>
+        <occupation>Bucatar</occupation>
+        <address>Iasi nr. 4</address>
+        <phone>0762123456</phone>
+        <site>www.buc.ro</site>
+        <mail>buc@office.com</mail>
+    </employeeDetails>
+        <employeeDetails>
+        <name>Ionescu Pop</name>
+        <occupation>Ajutor bucatar</occupation>
+        <address>Iasi nr. 4</address>
+        <phone>0762123456</phone>
+        <site>www.buc.ro</site>
+        <mail>buc@office.com</mail>
+    </employeeDetails>
+</employeesList>
