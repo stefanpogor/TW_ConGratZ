@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <link rel="stylesheet" href="../CSS/scholarlyStyle.css">
+        <title>Scholarly HTML</title>
+    </head>
+    <body prefix="schema: http://schema.org" itemscope="" itemtype="http://schema.org/WebPage">
+        <h1>ConGratZ - Scholarly </h1>
+        <section typeof="sa:AuthorsList">
+            <h2>Autori</h2>
+            <ul>
+                <li typeof="sa:ContributorRole" property="schema:author">
+                <a typeof="schema:Person" href="https://github.com/stefanpogor">
+                <meta property="schema:givenName" content="Ștefan" />
+                <meta property="schema:familyName" content="Pogor" />
+                <span property="schema:name">Ștefan Pogor</span>
+                </a>
+                <ul>
+                    <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                        <p>E-mail: pogorstefan@gmail.com</p>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            <ul>
+                <li typeof="sa:ContributorRole" property="schema:author">
+                <a typeof="schema:Person" href="https://github.com/evelynatincu">
+                <meta property="schema:givenName" content="Evelyna" />
+                <meta property="schema:familyName" content="Tincu" />
+                <span property="schema:name">Evelyna Tincu</span>
+                </a>
+                <ul>
+                    <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                        <p>E-mail: tincu_evelyna@yahoo.com</p>
+                    </li>
+                </ul>
+                </li>
+            <ul>
+        </section>
+
+        <h2>Cuprins</h2>
+        <li><a href="#introducere">Introducere</a> </li>
+            <ul>
+              <li><a href="#scop">1.1 Scop</a></li>
+              <li><a href="#audienta">1.2 Audiență țintă</a></li>
+              <li><a href="#scop-site">1.3 Scopul sitului</a> </li>
+              <li><a href="#referinte">1.4 Referințe</a></li>
+            </ul>
+
+        <li><a href="#descriere">Descriere</a> </li>
+                <ul>
+                <li><a href="#perspectiva">1.1 Perspectiva produsului</a></li>
+                <li><a href="#functionalitati-produs">1.2 Funcționalitățile produsului</a></li>
+                <li><a href="#categorii">1.3 Categorii de utilizatori</a></li>
+                <li><a href="#mediu">1.4 Mediu de operare</a></li>
+                <li><a href="#design">1.5 Design și constrângeri de implementare</a></li>
+                </ul>
+        <li><a href="#cerinte-ext">Cerințe externe</a> </li>
+                <ul>
+                <li><a href="#interfata-utilizator">1.1 Interfață utilizator</a></li>
+                <li><a href="#interfata-soft">1.2 Interfață software</a></li>
+                <li><a href="#interfata-comunicare">1.3 Interfață de comunicare</a></li>
+                </ul>
+
+        <li><a href="#functionalitati">Funcționalități</a> </li>
+                <ul>
+                <li><a href="#autentif-inreg">1.1 Autentificare/Înregistrare</a></li>
+                <li><a href="#creare-felicitare">1.2 Crearea de felicitări</a></li>
+                <li><a href="#butoanex3">1.2.1 Butoanele load covers, load stickers și load gifs</a></li>
+                <li><a href="#fill">1.2.2 Butonul fill</a></li>
+                <li><a href="#upload">1.2.3 Uploader-ul</a></li>
+                <li><a href="#text">1.2.4 Text</a></li>
+                <li><a href="#download">1.2.5 Download PNG</a></li>
+                <li><a href="#reset">1.2.6 Reset canvas</a></li>
+                <li><a href="#creare-carte">1.3 Crearea de cărți de vizită</a></li>
+                <li><a href="#load">1.3.1 Butonul load images</a></li>
+                <li><a href="#fill-carte">1.3.2 Butonul fill</a></li>
+                <li><a href="#upload-carte">1.3.3 Uploader-ul</a></li>
+                <li><a href="#text-carte">1.3.4 Text</a></li>
+                <li><a href="#download-carte">1.3.5 Download PDF</a></li>
+                <li><a href="#cod-qr">1.3.6 Generate QR</a></li>
+                <li><a href="#reset-carte">1.3.7 Reset canvas</a></li>
+                <li><a href="#contact">1.4 Contact</a></li>
+                </ul>
+        <li><a href="#cerinte">Cerințe non-funcționale</a> </li>
+        <li><a href="#bibliografie">Bibliografie</a> </li>
+                
+    <article id = "article" typeof = "schema:ScholarlyArticle" resource = "#"> 
+        <section typeof="sa:ScholarlyArticle" role="doc-introduction">
+            <h2 id="introducere">Introducere</h2>
+            <h3 id="scop">1.1 Scop</h3>
+            <p>
+                Site-ul ConGratZ este destinat persoanelor ce vor să își creeze propriile felicitări pentru zile aniversare și ocazii speciale, dar și cărți de vizită pentru business, într-un mod cât mai ușor și intuitiv. Este ușor de utilizat: accesezi situl, după îți creezi propria felicitare/carte de vizită. 
+            </p>
+            <h3 id="audienta">1.2 Audiența țintă</h3>
+            <p>
+                Acest document este destinat tuturor persoanelor ce doresc să afle mai multe informații despre site, cum ar fi: cum se folosește zona de editare a cărților de vizită/felicitărilor.
+            </p>
+            <h3 id="scop-site">1.3 Scopul sitului</h3>
+            <p>
+                Site-ul are scopul de a ajuta userii care au nevoie de felicitări sau/și cărți de vizită personalizate într-un mod cât mai plăcut și ușor.
+            </p>
+            <h3 id="referinte">1.4 Referințe</h3>
+            <p>Pentru a putea realiza o interfață a site-ului cât mai atractivă și ușor de folosit, am analizat câteva situri: </p>
+                <a href="https://www.w3schools.com/css/">w3schools.com</a>
+                <br>
+                <a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.cs">Cloudflare.com</a>
+                <br>
+                <a href="https://www.greetingsisland.com/">greetingsisland.com</a>
+        </section>
+
+        <section  typeof="sa:MaterialsAndMethods" role="doc-chapter" >
+            <h2 id="descriere">Descriere</h2>
+            <h3 id="perspectiva">1.1 Perspectiva produsului</h3>
+            <p>
+                Produsul își propune realizarea de cărti de vizită și felicitări personalizate pentru utilizatori.
+            </p>
+            <h3 id="functionalitati-produs">1.2 Funcționalitățile produsului</h3>
+            <p>
+                Cu ajutorul sitului, utilizatorii vor putea, cu sau fără cont, să își creeze propriile cărți de vizită/felicitări. 
+	        Pentru felicitări utilizatorul va putea, într-un editor, să aleagă un cover design existent în baza de date sau va putea opta pentru o culoare a background-ului.
+            Pe lângă această funcționalitate, utilizatorul va putea alege din baza de date stickere sau gif-uri, ori își poate încărca propria imagine.
+            De asemenea, va putea adăuga text în orice culoare dorește, iar ca modalitate principală de export a felicitării este în format png. 
+            </p>
+            <p>
+	        Pentru cărțile de vizită, utilizatorul își va putea alege un cover design existent în baza de date sau va putea opta pentru o culoare a background-ului. 
+            De asemenea, își va putea încărca logo-ul pentru a putea fi vizibil pe cartea de vizită, va putea introduce datele personale legate de job, iar ca modalitate principală
+            de export a cărții de vizită este în format pdf. Totodată, există și opțiunea de a genera un cod QR care va afișa doar datele cărții de vizită.
+            </p>
+            <h3 id="categorii">1.3 Categorii de utilizatori</h3>
+            <p>
+                Situl va putea fi folosit de orice persoană obișnuită cu cunoștințe minime de navigare pe un site, fiind intuitiv și usor de utilizat.
+            </p>
+            <h3 id="mediu">1.4 Mediu de operare</h3>
+            <p>
+                ConGratZ este o aplicație WEB ce folosește HTML, CSS, PHP și JavaScript, deci poate fi rulată în orice browser. 
+            </p>
+            <h3 id="design">1.5 Design și constrângeri de implementare</h3>
+            <p>
+                Fiind o aplicație online ce creează felicitări și cărți de vizita, trebuie să ne limităm la o dimensiune specifică acestora. Astfel, vor putea fi adăugate imagini/text/elemente de design grafic într-o arie bine definită.
+            </p>
+        </section>
+
+        <section  typeof="sa:MaterialsAndMethods" role="doc-chapter" >
+            <h2 id="cerinte-ext">Cerințe externe</h2>
+            <h3 id="interfata-utilizator">1.1 Interfață utilizator</h3>
+            <p> Home Page </p>
+            <img src="../Concepts/newhomePageMockup.png" alt="img1" width="600px">
+            <p> Greetings Card Page</p>
+            <img src="../Concepts/newcreateGreetingsCardPageMockup.png" alt="img2" width="600px">
+            <p> Business Card Page</p>
+            <img src="../Concepts/newcreateBusinessCardPageMockup.png" alt="img2" width="600px">
+            <p> Login Page </p>
+            <img src="../Concepts/newLoginPageMockup.png" alt="img3" width="600px">
+            <p> Sign Up Page </p>
+            <img src="../Concepts/newSignUpPageMockup.png" alt="img4" width="600px">
+            <p> Contact Page </p>
+            <img src="../Concepts/newcontactPageMockup.png" alt="img5" width="600px">
+            <h3 id="interfata-soft">1.2 Interfață software</h3>
+            <p>
+                Aplicația se conectează la o bază de date relațională pentru a putea stoca atât datele utilizatorilor, cât și elementele de design destinate folosirii de către utilizatori.
+            </p>
+            <h3 id="interfata-comunicare">1.3 Interfață de comunicare</h3>
+            <p>
+                User-ul și server-ul folosesc protocolul de comunicare HTTP pentru a interacționa.
+            </p>
+        </section>
+        <section  typeof="sa:MaterialsAndMethods" role="doc-chapter" >
+            <h2 id="functionalitati">Funcționalități Backend</h2>
+            <h3 id="autentif-inreg">1.1 Autentificare/Înregistrare</h3>
+            <p>
+                User-ul care deține deja un cont va introduce numele de utilizator și parola pentru autentificare, respectiv user-ul care nu are un cont va introduce 
+                pe lângă acestea și adresa de e-mail și numele complet pentru crearea unui cont. Datele introduse, după validare, vor fi trimise către server,
+                unde se va realiza o comunicare cu baza de date, folosind limbajul PHP și prepared statements (pentru a evita SQL injections), pentru a prelucra datele de conectare (inserare în baza de date, verificare existență cont).
+            </p>
+            <h3 id="creare-felicitare">1.2 Crearea de felicitări</h3>
+            <p>
+                Utilizatorul va dispune de o zonă în care își va putea crea propria felicitare, cu ajutorul următoarelor controllere implementate in JavaScript: 
+            </p>
+            <h4 id="butoanex3">1.2.1 Butoanele load covers, load stickers și load gifs</h4>
+            <p>
+                Aceste trei butoane au la bază call-uri AJAX. Prin apăsarea unuia dintre butoane este rulat un JavaScript care preia 
+                path-urile elementelor de design aferente fiecărui buton din baza de date, după care le introduce în tag-uri "img" și le afișează în pagină, fără
+                a reîmprospăta pagina. De asemenea, înainte de a alege un element de design ce va fi inserat în felicitare, trebuie completate câmpurile ce conțin coordonatele
+                acestora, cât și dimensiunea.
+            </p>
+            <h4 id="fill">1.2.2 Butonul fill</h4>
+            <p>
+                În cazul în care utilizatorul nu dorește să folosească un cover design existent, poate selecta o culoare din color picker, culoare ce va seta
+                background-ul felicitării.
+            </p>
+            <h4 id="upload">1.2.3 Uploader-ul</h4>
+            <p>
+                Utilizatorul are posibilitatea de a adăuga orice imagine dorește prin intermediul uploader-ului, dar înainte va trebui să completeze
+                câmpurile ce conțin coordonatele acesteia, cât și dimensiunea.
+            </p>
+            <h4 id="text">1.2.4 Text</h4>
+            <p>
+                În caseta input destinată introducerii de text utilizatorul poate introduce un mesaj ce va apărea pe felicitare după completarea
+                câmpurilor ce conțin coordonatele acestuia, dimensiunea și culoarea.
+            </p>
+            <h4 id="download">1.2.5 Download PNG</h4>
+            <p>
+                Utilizatorul va putea descărca felicitarea realizată în format PNG.
+            </p>
+            <h4 id="reset">1.2.6 Reset canvas</h4>
+            <p>
+                Odată cu apăsarea acestui buton, felicitarea va fi resetată, adică totul va fi șters.
+            </p>
+
+            <h3 id="creare-carte">1.3 Crearea de cărți de vizită</h3>
+            <p>
+                Utilizatorul va dispune de o zonă în care își va putea crea propria carte de vizită, cu ajutorul următoarelor controllere implementate in JavaScript: 
+            </p>
+            <h4 id="load">1.3.1 Butonul load images</h4>
+            <p>
+                Acest buton are la bază un call AJAX. Prin apăsarea acestuia este rulat un JavaScript care preia 
+                path-urile elementelor de design aferente butonului din baza de date, după care le introduce în tag-uri "img" și le afișează în pagină, fără
+                a reîmprospăta pagina.
+            </p>
+            <h4 id="fill-carte">1.3.2 Butonul fill</h4>
+            <p>
+                În cazul în care utilizatorul nu dorește să folosească un cover design existent, poate selecta o culoare din color picker, culoare ce va seta
+                background-ul cărții de vizită.
+            </p>
+            <h4 id="upload-carte">1.3.3 Uploader-ul</h4>
+            <p>
+                Utilizatorul are posibilitatea de a își adăuga logo-ul prin intermediul uploader-ului. Acesta va fi inserat într-o zonă predefinită.
+            </p>
+            <h4 id="text-carte">1.3.4 Text</h4>
+            <p>
+                Casetele input destinate introducerii datelor personale vor fi completate de către utilizator și vor fi inserate într-o zonă predefinită.
+            </p>
+            <h4 id="download-carte">1.3.5 Download PDF</h4>
+            <p>
+                Utilizatorul va putea descărca cartea de vizită realizată în format PDF.
+            </p>
+            <h4 id="cod-qr">1.3.6 Generate QR</h4>
+            <p>
+                După apăsarea acestui buton, va fi afișat un cod QR, ce va conține datele personale ale utilizatorului.
+            </p>
+            <h4 id="reset-carte">1.3.7 Reset canvas</h4>
+            <p>
+                Odată cu apăsarea acestui buton, felicitarea va fi resetată, adică totul va fi șters.
+            </p>
+            <h3 id="contact">1.4 Contact</h3>
+            <p>
+                Utilizatorul va putea lua legătura cu administratorii sitului pentru orice eventuale probleme sau întrebări.
+            </p>
+        <section  typeof="sa:MaterialsAndMethods" role="doc-chapter">   
+        <h2 id="cerinte">Cerințe non-funcționale</h2>
+            <p>Aplicația WEB este una sigură, posibile probleme ar putea apărea din partea bazei de date folosite.</p>
+	        <p>Aplicația este protejată împotriva atacurilor de tip SQL-injection.</p>
+        </section>
+        <section typeof="sa:ReferenceList" role="doc-bibliography">
+            <h2 id="bibliografie">Bibliografie</h2>
+              <ol>
+                <li property="schema:citation" role="doc-biblioentry" typeof="schema:WebPage"
+                resource="https://www.w3schools.com">
+                <cite property="schema:name">
+                    <a href="https://www.w3schools.com">W3 schools</a>
+                </cite>
+                </li>
+                <li property="schema:citation" role="doc-biblioentry" typeof="schema:WebPage"
+                resource="https://w3c.github.io/scholarly-html/">
+                <cite property="schema:name">
+                    <a href="https://w3c.github.io/scholarly-html/">Scholarly HTML</a>
+                </cite>
+                </li>
+                <li property="schema:citation" role="doc-biblioentry" typeof="schema:WebPage"
+                resource="https://schema.org/Person">
+                <cite property="schema:name">
+                    <a href="https://schema.org/Person">Scholarly Person</a>
+                </cite>
+                </li>
+              </ol>
+        </section>
+ </article>
+    </body>
+</html>
