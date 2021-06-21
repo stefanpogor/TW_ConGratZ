@@ -1,0 +1,223 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    font-family:Bahnschrift;
+    overflow-x:hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Desktop MENU */
+li, a, button{
+    font-size: 13px;
+    color: #3f446b;
+    text-decoration: none;
+}
+
+header{
+    align-items: center;
+    padding: 5px 3%;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.logo{
+    width: 110px;
+    cursor: pointer;
+    float: left;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a, button{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #3d8f7e;
+}
+
+.homepagebtn{
+    padding: 9px 25px;
+    background-color: rgba(101, 187, 180, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    outline: 0;
+    color: white;
+}
+
+.signoutbtn{
+    font-size: 13px;
+    color: #3f446b;
+    background: none;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+}
+
+.homepagebtn:hover{
+    background-color: rgba(101, 187, 180, 0.8);
+}
+
+nav{
+    float: right;
+}
+/*--------------------------*/
+
+.backgroundimage{
+    background: url(../resources/homePage-banner.svg) top right no-repeat;
+    grid-area: image;
+    background-position-y: bottom;
+}
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #6ec6b8;
+    color: white;
+    margin-top: auto;
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.2);
+  }
+
+.menu-icon{
+    display: none;
+}
+
+.grid-container{
+    display: grid;
+    padding-top: 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "info image"
+    ;
+    padding-left: 10px;
+}
+
+h1, h2{
+    margin: 0;
+}
+
+.h1-title{
+
+    font-size: 150%;
+    color:#3f446b;
+}
+
+.p-desc{
+    font-size: 20px;
+    color: #6ec6b8;
+    word-wrap: break-word;
+}
+
+.info{
+    grid-area: info;
+}
+
+.seeBtn{
+    padding-top: 5px;
+    padding-bottom: 100px;
+}
+
+button#colorCreateB{
+    background-color: #bf9eb3;
+}
+
+button#colorSeeB{
+    background-color: #3f446b;
+}
+
+#homeSection{
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    height: 100vh;
+}
+
+.container{
+    width: 300px;
+    border-radius: 30px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+.container a{
+    font-size: 30px;
+    padding: 20px;
+}
+
+.container:nth-child(1){
+    background-color: #bf9eb3;
+}
+
+.container:nth-child(2){
+    background-color: #d47f77;
+}
+
+.container:nth-child(3){
+    background-color: #3f446b;
+}
+
+h2{
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    color: #3f446b;
+}
+
+.GreetingsCard{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.greetingsCard-container img{
+    height: 250px;
+    margin: 10px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.BusinessCard{
+    display: inline-flex;
+}
+.businessCard-container img{
+    width: 200px;
+    margin: 10px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+figure{
+    text-align: center;
+}
+
+@media screen and (max-width: 414px) {
+    .backgroundimage{
+        display: none;
+    }
+    .grid-container{
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "info"
+        ;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-top: 30px
+    }
+
+    ul{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        float: right;
+        margin-top: 20px;
+    }
+}
